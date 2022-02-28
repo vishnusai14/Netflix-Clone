@@ -1,0 +1,62 @@
+.container {
+  margin: 8rem 3rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.text h3 {
+  font-size: 2.5rem;
+}
+
+.text p {
+  font-size: 1.2rem;
+}
+
+.emailInput {
+  margin: 1rem;
+}
+
+.emailInput input {
+  width: 70vw;
+  height: 20vh;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.emailInput input:focus {
+  outline: none;
+}
+
+.emailAddress {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  color: rgb(145, 143, 143);
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.emailInput input:focus + .email {
+  transform: translateX(-1rem) translateY(-2.9rem) scale(0.7);
+}
+
+.emailUp {
+  transform: translateX(-1rem) translateY(-2.9rem) scale(0.7);
+}
+
+.email {
+  transform: translateY(-2.1rem) scale(1);
+  transition: transform 0.2s ease-in;
+}

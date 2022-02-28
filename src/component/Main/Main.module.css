@@ -1,0 +1,4 @@
+.main {
+  background-image: linear-gradient(black, transparent, black),
+    url("../../assets/main-bg.jpg");
+}
