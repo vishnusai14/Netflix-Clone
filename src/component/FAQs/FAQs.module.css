@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100vw;
+}
+
+.faqContainer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-width: 400px;
+  padding: 5rem;
+}
+
+.title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}

@@ -1,5 +1,11 @@
+.wrapper {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
-  margin: 8rem 3rem;
+  margin: 8rem 2rem 0 2rem;
   padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
@@ -28,10 +34,10 @@
 
 .emailInput input {
   width: 70vw;
-  height: 20vh;
+  height: 45px;
   border-radius: 5px;
   border: none;
-  padding: 1rem;
+  padding: 1.3rem 1rem;
   position: relative;
   font-family: "Poppins", sans-serif;
 }
@@ -49,14 +55,72 @@
 }
 
 .emailInput input:focus + .email {
-  transform: translateX(-1rem) translateY(-2.9rem) scale(0.7);
+  transform: translateX(-1.1rem) translateY(-3.2rem) scale(0.7);
+  font-weight: 700;
 }
 
 .emailUp {
-  transform: translateX(-1rem) translateY(-2.9rem) scale(0.7);
+  transform: translateX(-1.1rem) translateY(-3.2rem) scale(0.7);
+  transition: transform 0.2s ease-in;
+  font-weight: 700;
 }
 
 .email {
-  transform: translateY(-2.1rem) scale(1);
+  transform: translateY(-2.2rem) scale(1);
   transition: transform 0.2s ease-in;
+}
+
+.errorInput {
+  border-bottom: 2px solid #ff9f0a !important;
+}
+
+.errorText {
+  font-family: "Poppins", sans-serif;
+  color: #ff9f0a;
+}
+
+.getStarted {
+  position: relative;
+}
+
+.getStartedArrow {
+  color: white;
+  position: absolute;
+  top: 0.7rem;
+  left: 8.2rem;
+}
+
+.getStartedButton {
+  color: white;
+  background-color: #e50914;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    width: auto;
+  }
+  .emailInput input {
+    width: 100%;
+  }
+  .emailAddress {
+    font-size: 0.8rem;
+  }
+  .emailInput input:focus + .email {
+    transform: translateX(-1.1rem) translateY(-3rem) scale(0.7);
+    font-weight: 700;
+  }
+
+  .emailUp {
+    transform: translateX(-1.1rem) translateY(-3rem) scale(0.7);
+    transition: transform 0.2s ease-in;
+    font-weight: 700;
+  }
 }

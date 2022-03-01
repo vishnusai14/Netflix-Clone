@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100vw;
+}
+.lineBreak {
+  width: 100vw;
+  height: 10px;
+  background-color: #222;
+  min-width: 400px;
+}
+
+@media (max-width: 400px) {
+  .lineBreak {
+    width: auto;
+  }
+}

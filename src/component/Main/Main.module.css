@@ -1,4 +1,6 @@
 .main {
   background-image: linear-gradient(black, transparent, black),
     url("../../assets/main-bg.jpg");
+  width: 100vw;
+  min-width: 400px;
 }
