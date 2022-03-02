@@ -47,7 +47,7 @@
 
 .globe {
   position: absolute;
-  top: 0.2rem;
+  top: 0.3rem;
   left: 0.3rem;
 }
 
@@ -64,4 +64,26 @@
   height: 1.8rem;
   font-family: "Poppins", sans-serif;
   /* font-weight: bold; */
+}
+
+@media (min-width: 40rem) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .title {
+    width: 200px;
+    height: 60px;
+  }
+  .signInButton {
+    height: 2.5rem;
+    width: 7rem;
+  }
+  .languageSelect {
+    height: 2.5rem;
+  }
+  .globe {
+    top: 0.65rem;
+    left: 0.5rem;
+  }
 }

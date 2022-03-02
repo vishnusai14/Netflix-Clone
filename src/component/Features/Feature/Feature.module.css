@@ -15,6 +15,11 @@
   height: 100%;
 }
 
+.words {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -32,5 +37,31 @@
 @media (max-width: 400px) {
   .featureContainer {
     width: auto;
+  }
+}
+
+@media (min-width: 40rem) {
+  .featureContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+  }
+  .even {
+    flex-direction: row-reverse;
+  }
+  .imageContainer {
+    width: 30%;
+    height: 30%;
+  }
+  .words {
+    width: 40%;
+  }
+  .title {
+    text-align: left;
+  }
+  .description {
+    text-align: left;
   }
 }

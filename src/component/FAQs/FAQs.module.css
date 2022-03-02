@@ -20,3 +20,20 @@
   margin-bottom: 0.4rem;
   text-align: center;
 }
+
+.formWrapper .wrapper .container {
+  padding-bottom: 18rem;
+}
+
+.moveDown {
+  transform: translateY(13rem);
+}
+
+.moveForm {
+  transform: translateY(16rem);
+}
+
+.moveFormUp {
+  transition: transform 0.2s ease-in;
+  transform: translateY(-2rem);
+}

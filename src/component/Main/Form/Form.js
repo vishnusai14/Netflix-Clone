@@ -38,57 +38,63 @@ class Form extends React.Component {
     return (
       <div className={classes.wrapper}>
         <div className={classes.container}>
-          <div className={`${classes.text} ${classes.bigText}`}>
-            <h3>Unlimited moies, TV shows and more.</h3>
-          </div>
-          <div className={`${classes.text} ${classes.smallText}`}>
-            <p>Watch anywhere. Cancel anytime</p>
-          </div>
+          {!this.props.notShow && (
+            <>
+              <div className={`${classes.text} ${classes.bigText}`}>
+                <h3>Unlimited moies, TV shows and more.</h3>
+              </div>
+              <div className={`${classes.text} ${classes.smallText}`}>
+                <p>Watch anywhere. Cancel anytime</p>
+              </div>
+            </>
+          )}
           <div className={`${classes.text} ${classes.smallText}`}>
             <p>
               Ready to watch? Enter your email to create or restart your
               membership.
             </p>
           </div>
-          <div className={classes.emailInput}>
-            <input
-              ref={this.emailRef}
-              onBlur={() => {
-                this.blurHandler();
-              }}
-              onChange={(e) => {
-                this.changeEmailHandler(e);
-              }}
-              value={this.state.email}
-              type="text"
-              className={!this.state.isEmailValid ? classes.errorInput : ""}
-            />
-            <p
-              onClick={() => {
-                this.clickHandler();
-              }}
-              className={`${classes.emailAddress} ${
-                this.state.email.length !== 0 || this.state.focused
-                  ? classes.emailUp
-                  : classes.email
-              } }`}
-            >
-              Email address
-            </p>
-            {!this.state.isEmailValid && (
-              <p className={classes.errorText}>
-                Please enter a valid email address.
+          <div className={classes.fieldContainer}>
+            <div className={classes.emailInput}>
+              <input
+                ref={this.emailRef}
+                onBlur={() => {
+                  this.blurHandler();
+                }}
+                onChange={(e) => {
+                  this.changeEmailHandler(e);
+                }}
+                value={this.state.email}
+                type="text"
+                className={!this.state.isEmailValid ? classes.errorInput : ""}
+              />
+              <p
+                onClick={() => {
+                  this.clickHandler();
+                }}
+                className={`${classes.emailAddress} ${
+                  this.state.email.length !== 0 || this.state.focused
+                    ? classes.emailUp
+                    : classes.email
+                } }`}
+              >
+                Email address
               </p>
-            )}
-          </div>
-          <div className={classes.getStarted}>
-            <div className={classes.getStartedArrow}>
-              <FaAngleRight />
+              {!this.state.isEmailValid && (
+                <p className={classes.errorText}>
+                  Please enter a valid email address.
+                </p>
+              )}
             </div>
+            <div className={classes.getStarted}>
+              <div className={classes.getStartedArrow}>
+                <FaAngleRight />
+              </div>
 
-            <button className={classes.getStartedButton} type="submit">
-              Get Started
-            </button>
+              <button className={classes.getStartedButton} type="submit">
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
       </div>

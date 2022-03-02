@@ -28,6 +28,13 @@
   font-size: 1.2rem;
 }
 
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .emailInput {
   margin: 1rem;
 }
@@ -122,5 +129,27 @@
     transform: translateX(-1.1rem) translateY(-3rem) scale(0.7);
     transition: transform 0.2s ease-in;
     font-weight: 700;
+  }
+}
+
+@media (min-width: 40rem) {
+  .container {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fieldContainer {
+    flex-direction: row;
+    width: 30rem;
+  }
+  .emailInput {
+    margin-right: 0;
+  }
+  .emailInput input {
+    width: 30vw;
+    margin-left: 0;
+  }
+  .getStartedButton {
+    height: 2.9rem;
   }
 }

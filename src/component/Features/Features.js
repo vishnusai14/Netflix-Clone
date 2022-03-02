@@ -33,6 +33,7 @@ class Features extends React.Component {
           </Feature>
           <LineBreak />
           <Feature
+            even={true}
             title="Download your shows to watch offline."
             description="Save your favourites easily and always have something to watch."
           >
@@ -79,13 +80,14 @@ class Features extends React.Component {
               />
             </div>
           </Feature>
+          <LineBreak />
           <Feature
+            even={true}
             title="Create profiles for children."
             description="Send children on adventures with their favourite characters in a space made just for them—free with your membership."
           >
             <img className={classes.tvImg} src={Children} alt="Children" />
           </Feature>
-          <LineBreak />
           <LineBreak />
         </div>
       </>
